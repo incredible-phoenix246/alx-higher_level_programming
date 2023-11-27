@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PY_SCRIPT="$PYFILE"
+
+# Check if the file exists
+if [ -f "$PY_SCRIPT" ]; then
+    # Run the Python script
+    python "$PY_SCRIPT"
+else
+    echo "Error: Python script file not found."
+fi
