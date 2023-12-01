@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-import sys
 
-if __name__ == '__main__':
-    argvec = sys.argv
-    len_av = len(argvec)
-    infinite_sum = 0
+if __name__ == "__main__":
+    """Print the addition of all arguments."""
+    import sys
 
-    if len_av > 1:
-        for i in range(1, len_av):
-            infinite_sum += int(argvec[i])
-
-    print(infinite_sum)
+    total = 0
+    for i in range(len(sys.argv) - 1):
+        total += int(sys.argv[i + 1])
+    print("{}".format(total))
